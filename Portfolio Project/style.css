@@ -1,0 +1,201 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    display: inline-block;
+    width:90%;
+    border-bottom: 2px solid #958ab7;
+    margin-left:5%;
+    margin-right:5%;
+}
+ul{
+    list-style-type: none;
+    padding:0;
+    text-align: center;
+}
+
+/*-------------- header -------------*/
+
+.header-image{
+    float:left;
+    width:60px;
+    height:60px;
+}
+
+.header-content{
+    float:right;
+    text-align: right;
+}
+
+.header-title{
+    font-size:2em;
+    margin:0;
+    font-weight: normal;
+}
+.header-title-adds{
+    margin:0;
+    font-weight: bold;
+}
+
+/*---------- main image section -----------*/
+
+.main-section{
+    margin-right:5%;
+}
+.main-img{
+    width:95%;
+    float: right;
+    min-width:50%;
+    min-height:50%;
+}
+
+/*----- color samples on the left -----*/
+
+.boxed-colors-container{
+    display: block;
+    float:left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-left:10%;
+    text-align: justify;
+}
+
+.boxed-colors{
+    display:block;
+    margin:auto;
+    width:45px;
+    height:45px;
+}
+
+.light-blue{
+    background-color:#02b3e4
+}
+
+.nile-blue{
+    background-color:#2d3c49
+}
+
+.bali-hai{
+    background-color:#7d97ad
+}
+
+/*-------- Featured Work Area ----------*/
+
+.featured-work{
+    text-align: left;
+    width:90%;
+    float:left;
+    margin-right:10%;
+    margin-left:10%;
+}
+
+.featured-work-title{
+    color:#7d97ad;
+    font-weight:500;
+}
+
+.fw-container{
+    width:30%;
+    margin-right:2%;
+    display: inline-block;
+    text-align: start;
+    color:#2d3c49;
+}
+.fw-container,h1{
+    margin:0;
+    text-align: center;
+}
+.links{
+    text-align: center;
+    word-wrap: break-word;
+}
+.featured-work-img1{
+    width:100%;
+}
+.featured-work-img2{
+    width:100%;
+}
+.featured-work-img3{
+    width:100%;
+}
+/*------------ media break points ---------*/
+
+/* MINOR BREAK POINTS FOR FONT SIZES */
+
+@media screen and (max-width:1400px){
+    .featured-work{
+        margin:0;
+        text-align: left;
+        width:95%;
+        float:right;
+    }
+    .fw-container{
+        width:30%;
+        margin-right:2%;
+        display: inline-block;
+        text-align: center;
+        color:#2d3c49;
+    }
+}
+
+/* BREAK POINT FOR IPAD */
+
+@media screen and (max-width:797px){
+    body{
+        text-align: center;
+        margin:0;
+    }
+    header{
+        width:80%;
+        margin:0;
+    }
+    .header-image{
+        width:50px;
+        height:50px;
+    }
+    .main-section{
+        margin-left:10%;
+        margin-right:10%;
+    }
+    .main-img{
+        width:100%;
+    }
+    .boxed-colors-container{
+        width:30%;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        text-align: justify;
+    }
+    .boxed-colors{
+        width:30px;
+        height:30px;
+    }
+    .fw-container{
+        margin-right:10%;
+        margin-left:10%;
+        width:80%;
+        text-align: center;
+        color:#2d3c49;
+        display:block;
+        margin-bottom:20px;
+    }
+    .featured-work-title{
+        text-align: center;
+    }
+    .links{
+        font-size: 1.5em;
+    }
+}
+
+/* BREAK POINT FOR GOOGLE NEXUS 5 */
+
+@media screen and (max-width:360px){
+    header{
+        margin:0;
+        width:100%;
+    }
+    .main-section{
+        margin:0;
+    }
+}
