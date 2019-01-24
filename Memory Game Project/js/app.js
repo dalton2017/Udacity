@@ -1,14 +1,15 @@
 /*
  * Create a list that holds all of your cards
  */
-var cardList = ["diamond", "paper-plane-o", "anchor", "bolt", "cube", "leaf", "bicycle", "bomb", "diamond", "paper-plane-o", "anchor", "bolt", "cube", "leaf", "bicycle", "bomb"]
-var clicks = 0;
-var move = 0;
-var myInterval;
-var toMatch = [];
-var open = [];
-var done = [];
-var htmlMove = document.getElementById('moves');
+var cardList = ["diamond", "paper-plane-o", "anchor", "bolt", "cube", "leaf", "bicycle", "bomb"];
+cardList = cardList.concat(cardList);
+let clicks = 0;
+let move = 0;
+let myInterval;
+let toMatch = [];
+let open = [];
+let done = [];
+let htmlMove = document.getElementById('moves');
 /*
  * Display the cards on the page
  *   - shuffle the list of cards using the provided "shuffle" method below
@@ -90,6 +91,7 @@ function addListenerForRestart() {
 
 function restart() {
     //console.log("????");
+    toMatch=[];
     clicks = 0;
     move = 0;
     timerFun("stop");
